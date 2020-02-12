@@ -33,20 +33,20 @@ function init() {
     .prompt(questions)
     .then(function ({ username, color }) {
         switch (color) {
-            case 'green':
-                data.color = 0;
+            case "green":
+                data.color = "green";
                 break;
-            case 'blue':
-                data.color = 1;
+            case "blue":
+                data.color = "blue";
                 break;
-            case 'pink':
-                data.color = 2;
+            case "pink":
+                data.color = "pink";
                 break;
-            case 'red':
-                data.color = 3;
+            case "red":
+                data.color = "red";
                 break;
             default:
-                data.color = 0;
+                data.color = "red";
                 break;
         }
 
