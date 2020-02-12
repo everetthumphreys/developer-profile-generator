@@ -22,7 +22,7 @@
   "homepage": "https://github.com/everetthumphreys/developer-profile-generator#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "electron-html-to": "^2.6.0",
+    "html5-to-pdf": "^3.2.0",
     "inquirer": "^7.0.4"
   }
 }

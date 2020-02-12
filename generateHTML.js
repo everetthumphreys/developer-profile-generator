@@ -1,4 +1,4 @@
-const colors = {
+const color = {
   green: {
     wrapperBackground: "#E6E1C3",
     headerBackground: "#C1C72C",
@@ -238,31 +238,31 @@ function generateHTML(data) {
       <div class="wrapper">
           <header>
               <div class="photo-header">
-                  <img src="${data.portPic}"><br>
+                  <img src="${data.user.avatar_url}"><br>
                   <h1>Hi!</h1>
-                  <h2>My name is ${data.name}</h2>
-                  <h3>Currently @ ${data.company}</h3>
+                  <h2>My name is ${data.user.name}</h2>
+                  <h3>Currently @ ${data.user.company}</h3>
                   <nav class="links-nav">
                       <i class="fas fa-location-arrow"></i><a class="nav-link"
-                          href="https://www.google.com/maps/place/${data.location.split(' ')[0]}+${data.location.split(' ')[1]}">${data.location}</a>
-                          <i class="fab fa-github-alt"></i><a class="nav-link" href="https://github.com/${data.username}">github</a>
-                          <i class="fas fa-rss"></i><a class="nav-link" href="${data.blog}">blog</a>
+                          href="https://www.google.com/maps/place/${data.user.location}">${data.user.location}</a>
+                          <i class="fab fa-github-alt"></i><a class="nav-link" href="https://github.com/${data.user.login}">github</a>
+                          <i class="fas fa-rss"></i><a class="nav-link" href="${data.user.blog}">blog</a>
                   </nav>
           </header>
           <div class="container">
               <div class="row">
                   <div class="col">
-                      <h2>${data.bio}</h2>
+                      <h2>${data.user.bio}</h2>
                   </div>
               </div>
               <div class="row">
                   <div class="col card">
                       <h2>Public repositories: </h2>
-                      <h4>${data.numOfRepo}</h4>
+                      <h4>${data.user.public_repos}</h4>
                   </div>
                   <div class="col card">
                       <h2>Followers:</h2>
-                      <h4>${data.followers}</h4>
+                      <h4>${data.user.followers}</h4>
                   </div>
               </div>
               <div class="row">
@@ -272,7 +272,7 @@ function generateHTML(data) {
                   </div>
                   <div class="card col">
                       <h2>Following:</h2>
-                      <h4>${data.followers}</h4>
+                      <h4>${data.user.following}</h4>
                   </div>
               </div>
           </div>
