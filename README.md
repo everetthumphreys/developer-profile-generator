@@ -7,3 +7,6 @@ A command-line application that dynamically generates a PDF profile from a GitHu
 [Inquirer](https://www.npmjs.com/package/inquirer)
 [HTMLt-to-PDF](https://www.npmjs.com/package/html5-to-pdf)
 [Axios](https://www.npmjs.com/package/axios)
+
+### Video:
+[Gif](https://github.com/everetthumphreys/developer-profile-generator/blob/master/example.gif)
