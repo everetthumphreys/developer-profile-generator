@@ -1,4 +1,4 @@
-const color = {
+const colors = {
   green: {
     wrapperBackground: "#E6E1C3",
     headerBackground: "#C1C72C",
@@ -14,7 +14,7 @@ const color = {
   pink: {
     wrapperBackground: "#879CDF",
     headerBackground: "#FF8374",
-    headerColor: "white",
+    headerColor: "white", 
     photoBorderColor: "#FEE24C"
   },
   red: {
@@ -60,11 +60,7 @@ function generateHTML(data) {
           }
   
           .wrapper {
-              background-color: $ {
-                  colors[data.color].wrapperBackground
-              }
-  
-              ;
+              background-color: ${colors[data.color].wrapperBackground};
               padding-top: 100px;
           }
   
@@ -122,17 +118,9 @@ function generateHTML(data) {
               justify-content: center;
               flex-wrap: wrap;
   
-              background-color: $ {
-                  colors[data.color].headerBackground
-              }
+              background-color: ${colors[data.color].headerBackground};
   
-              ;
-  
-              color: $ {
-                  colors[data.color].headerColor
-              }
-  
-              ;
+              color: ${colors[data.color].headerColor};
               padding: 10px;
               width: 95%;
               border-radius: 6px;
@@ -144,12 +132,7 @@ function generateHTML(data) {
               border-radius: 50%;
               object-fit: cover;
               margin-top: -75px;
-  
-              border: 6px solid $ {
-                  colors[data.color].photoBorderColor
-              }
-  
-              ;
+              border: 6px solid ${colors[data.color].photoBorderColor};
               box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px;
           }
   
@@ -200,19 +183,10 @@ function generateHTML(data) {
               padding: 20px;
               border-radius: 6px;
   
-              background-color: $ {
-                  colors[data.color].headerBackground
-              }
-  
-              ;
-  
-              color: $ {
-                  colors[data.color].headerColor
-              }
-  
-              ;
+              background-color: ${colors[data.color].headerBackground};
+              color: ${colors[data.color].headerColor};
               margin: 20px;
-          }
+           }
   
           .col {
               flex: 1;
